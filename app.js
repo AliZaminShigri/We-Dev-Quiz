@@ -10,17 +10,17 @@ app.use(cors());
 const url = "http://aabf.docs.apiary.io/#reference/0/books/books/"
 app.get("/books", async (req, res) =>  {
     await axios.get(url)
-    .then(function(response){
+    .then(response =>{
         console.log(response)
-        res.status(200).send(response.data);
+        res.status(200).send(response.body);
     });
 });
 
 app.get("/bookSearch", async (req, res) => {
     await axios.get(`https://aabf.docs.apiary.io/#reference/0/books-search/books-search`)
-    .then(function(response){
+    .then(response => {
         console.log(response);
-        res.send(response.data);
+        res.send(response.body);
     })
 })
 
