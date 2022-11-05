@@ -21,7 +21,7 @@ app.get("/books", async (req, res) => {
 
 **Screenshot**
 
-[task 1 screenshot](./assets/task1.png)
+![task 1 screenshot](./assets/task1.png)
 
 ### Task 2
 
@@ -43,4 +43,4 @@ app.get("/bookSearch", async (req, res) => {
 
 **Screenshot**
 
-[task 2 screenshot](./assets/task2.png)
+![task 2 screenshot](./assets/task2.png)
