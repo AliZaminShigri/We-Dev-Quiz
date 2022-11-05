@@ -11,8 +11,7 @@ app.get("/books", async (req, res) => {
   await axios
     .post("https://private-anon-2689b13390-aabf.apiary-mock.com/books")
     .then((response) => {
-      console.log(response.data);
-      res.status(200).send(response.data);
+      res.status(200).send(response.data.body);
     });
 });
 
@@ -20,8 +19,7 @@ app.get("/bookSearch", async (req, res) => {
   await axios
     .post(`https://private-anon-2689b13390-aabf.apiary-mock.com/books-search`)
     .then((response) => {
-      console.log(response.data);
-      res.send(response.data);
+      res.send(response.data.body);
     });
 });
 
